@@ -1,0 +1,94 @@
+/* Styles for the main section */
+#home {
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-title {
+  font-size: 24px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.welcome-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-content p {
+  margin-bottom: 10px;
+}
+
+/* Styles for the image containers */
+.image-container {
+  position: relative;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+.image1 {
+  background-image: url("image2.jpg");
+  width: 100%;
+  height: 300px;
+}
+
+.image2 {
+  background-image: url("back.jfif");
+  width: 100%;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image-container:hover .overlay-content {
+  opacity: 1;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .overlay-content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overlay-content {
+    font-size: 16px;
+  }
+}

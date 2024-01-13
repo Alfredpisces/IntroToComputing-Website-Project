@@ -1,0 +1,87 @@
+#devotionals {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #devotionals h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #devotionals p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #devotionals h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .devotional {
+    margin-bottom: 20px;
+  }
+  
+  .devotional h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .devotional p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .devotional a {
+    font-size: 16px;
+  }
+  
+  #devotionals ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  #devotionals li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #devotionals li p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    #devotionals h2 {
+      font-size: 20px;
+    }
+  
+    #devotionals p {
+      font-size: 16px;
+    }
+  
+    #devotionals h3 {
+      font-size: 18px;
+    }
+  
+    .devotional h4 {
+      font-size: 16px;
+    }
+  
+    .devotional p {
+      font-size: 14px;
+    }
+  
+    .devotional a {
+      font-size: 14px;
+    }
+  
+    #devotionals li {
+      font-size: 14px;
+    }
+  
+    #devotionals li p {
+      font-size: 12px;
+    }
+  }

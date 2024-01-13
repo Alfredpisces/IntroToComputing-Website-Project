@@ -1,0 +1,48 @@
+#bible-versions {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #bible-versions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #bible-versions p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #bible-versions h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #bible-versions ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  #bible-versions li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    #bible-versions h2 {
+      font-size: 20px;
+    }
+  
+    #bible-versions p {
+      font-size: 16px;
+    }
+  
+    #bible-versions h3 {
+      font-size: 18px;
+    }
+  
+    #bible-versions li {
+      font-size: 14px;
+    }
+  }

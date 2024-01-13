@@ -1,0 +1,42 @@
+// Function to perform the search
+function performSearch(query) {
+  // Replace with your actual search logic
+  // This is just a placeholder example
+   const searchResults = [
+    { title: 'Psalm 119:105', content: 'Thy word is a lamp unto my feet, and a light unto my path.' },
+    { title: 'Proverbs 3:5-6', content: 'Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight.' },
+    { title: 'John 3:16', content: 'For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.' },
+  ];
+
+  return searchResults.filter(result => result.title.includes(query));
+}
+
+// Function to display the search results
+function displaySearchResults(results) {
+  const searchResults = document.querySelector('#search-results');
+  searchResults.innerHTML = '';
+
+  if (results.length === 0) {
+    searchResults.innerHTML = '<p>No results found.</p>';
+  } else {
+    results.forEach(result => {
+      const resultElement = document.createElement('div');
+      resultElement.innerHTML = `
+        <h3>${result.title}</h3>
+        <p>${result.content}</p>
+      `;
+      searchResults.appendChild(resultElement);
+    });
+  }
+}
+
+// Event listener for the search form submission
+const searchForm = document.querySelector('form');
+const searchInput = document.querySelector('#search-input');
+
+searchForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const query = searchInput.value;
+  const results = performSearch(query);
+  displaySearchResults(results);
+});

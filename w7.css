@@ -1,0 +1,55 @@
+#resources {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #resources img {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  /* Resource Layout */
+  .resource {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .resource h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .resource p {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .resource a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .resource a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Layout */
+  @media only screen and (max-width: 768px) {
+    .resource {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .resource img {
+      margin-bottom: 1rem;
+    }
+  }

@@ -1,0 +1,48 @@
+#devotional,
+#resources {
+  text-align: center;
+}
+
+.devotional-content,
+.resources-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+.resources-content {
+  margin-top: 5px; /* Adjust the margin-top value as needed */
+}
+
+.resources-content:first-child {
+  margin-top: 0; /* Remove margin-top for the first resource content */
+}
+
+  .resources-content {
+    margin-top: 5px;
+  }
